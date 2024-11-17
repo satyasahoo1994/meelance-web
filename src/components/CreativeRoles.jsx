@@ -13,7 +13,7 @@ const CreativeRoles = () => {
       <div className="flex flex-wrap gap-2.5 justify-center items-center px-2.5 mt-6 w-full max-md:max-w-full">
         {/* {[...Array(6)].map((_, index) => ( */}
           <div
-            // key={index}
+            // key={index}  
             className="flex grow shrink self-stretch my-auto w-32 rounded-xl h-[216px]"
           >
             <img
