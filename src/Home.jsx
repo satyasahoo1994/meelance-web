@@ -1,8 +1,10 @@
 import React from 'react';
-import LandingPage from './components/LandingPage';
+// import LandingPage1 from './screens/lending2/LandingPage';
+import LandingPage2 from './screens/lending1/lendingPage1';
 
 const HomePage = () => {
-  return <LandingPage />;
+  // return <LandingPage1 />;
+  return <LandingPage2 />;
 };
 
 export default HomePage;

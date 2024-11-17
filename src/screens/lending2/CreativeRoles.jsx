@@ -1,5 +1,5 @@
 import React from 'react';
-import frame4 from '../assets/frame4.png';
+import frame4 from '../../assets/frame4.png';
 
 const CreativeRoles = () => {
   return (
