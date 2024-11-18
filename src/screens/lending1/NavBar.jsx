@@ -1,10 +1,10 @@
 import React from 'react';
 import logoWhite from '../../assets/logo_white.png';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const NavBar = () => {
   const navigate = useNavigate();
+  
   return (
       <div className="flex flex-wrap gap-5 justify-between w-full max-w-[1023px] max-md:max-w-full">
         <div className="flex flex-col items-center">
@@ -16,9 +16,9 @@ const Header = () => {
           />
         </div>
         <nav className="flex gap-4 items-start text-sm leading-none">
-        <button
+          <button
             className="gap-2.5 self-stretch px-6 py-3 text-white whitespace-nowrap bg-black rounded-2xl shadow-sm max-md:px-5"
-            style={{background: `rgba(187, 123, 255, 1)`, cursor: 'pointer'}}
+            style={{ background: `rgba(187, 123, 255, 1)` }}
             onClick={() => navigate('/page1')}
           >
             Get Started
@@ -28,4 +28,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;

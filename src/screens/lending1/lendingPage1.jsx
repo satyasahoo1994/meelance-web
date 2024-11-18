@@ -16,7 +16,7 @@ const LandingPage = () => {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <div className="flex absolute bottom-3.5 top-2 left-2/4 z-0 justify-between items-start max-w-full -translate-x-2/4 min-h-[825px] translate-y-[0%] w-[1280px]" />
+      {/* <div className="flex absolute bottom-3.5 top-2 left-2/4 z-0 justify-between items-start max-w-full -translate-x-2/4 min-h-[825px] translate-y-[0%] w-[1280px]" /> */}
         <NavBar />
         <Header />
         <Footer />
