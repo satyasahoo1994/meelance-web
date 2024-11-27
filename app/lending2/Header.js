@@ -1,9 +1,14 @@
+'use client';
+
 import React from 'react';
 import logo from '../images/logo.png';
 import mail from '../images/mail.png';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <header
       data-layername="header"
@@ -16,6 +21,8 @@ const Header = () => {
             src={logo}
             alt="Meelance logo"
             className="object-contain max-w-full aspect-[3.32] w-[133px]"
+            onClick={() => router.push('/')}
+            style={{ cursor: 'pointer' }}
           />
         </div>
         <nav className="flex gap-4 items-center text-sm leading-none mt-4 md:mt-0">
