@@ -15,7 +15,7 @@ const LandingPage1 = () => {
   return (
     <div className="flex flex-col overflow-hidden bg-white pb-3" style={{ width: '100%' }}>
       <Header />
-      <main className="flex flex-col justify-center w-full max-w-[1300px] px-4 md:px-6 mx-auto mt-6">
+      <main className="flex flex-col justify-center w-full max-w-[1200px] px-4 md:px-6 mx-auto mt-6">
         <Hero />
         <section className="flex flex-col w-full mt-5 space-y-16 md:space-y-24 max-md:mt-10">
           <FeatureCard
