@@ -6,11 +6,10 @@ import NavBar from './NavBar';
 
 const LandingPage = () => {
   return (
-    <main className="flex overflow-hidden relative flex-col bg-zinc-950" style={{
+    <div className="flex overflow-hidden flex-col bg-zinc-950 lg:h-[100vh]" style={{
       backgroundImage: `url('/images/bgImage.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      height: '100vh',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -19,7 +18,7 @@ const LandingPage = () => {
       <NavBar />
       <Header />
       <Footer />
-    </main>
+    </div>
   );
 };
 

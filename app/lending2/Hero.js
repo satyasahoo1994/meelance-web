@@ -12,17 +12,15 @@ import redfm from '../images/redfm.png';
 
 const Hero = () => {
   return (
-    <section
-      data-layername="body"
-      className="flex flex-col w-full px-6 max-md:px-4 max-md:max-w-full"
+    <div
+    // className="flex flex-col w-full px-6 max-md:px-4 max-md:max-w-full"
     >
       <div
-        data-layername="image"
-        className="flex flex-wrap gap-4 items-start pt-4 pr-4 pl-6 w-full rounded-lg bg-white bg-opacity-20 h-[450px] max-md:max-w-full max-md:pl-4"
+        className="flex flex-wrap gap-4 items-start pt-4 pr-4 pl-6 w-full rounded-lg bg-white bg-opacity-20 max-md:max-w-full max-md:pl-4 max-md:max-h-auto"
       >
-        <div className="flex flex-col grow shrink min-w-[240px] w-[396px] max-md:max-w-full p-8">
+        <div className="flex flex-col">
           <div className="flex flex-col w-full max-w-[495px] max-md:max-w-full">
-            <h1 className="gap-2 w-full uppercase text-left text-black text-5xl font-bold leading-[39px] decoration-none underline-offset-[from-font] font-[BriemHand]">
+            <h1 className="gap-2 w-full uppercase text-left text-black text-4xl font-bold leading-[39px] decoration-none underline-offset-[from-font] font-[BriemHand]">
               A professional network for media And Entertainment Industry
             </h1>
             <div className="flex flex-col mt-10 max-w-full text-black w-full text-justify">
@@ -133,7 +131,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
   );
 };

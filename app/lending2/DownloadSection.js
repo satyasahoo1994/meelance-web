@@ -8,7 +8,7 @@ import Apple from '../images/Apple.png';
 const DownloadSection = () => {
   return (
     <section className="flex flex-col mt-12 w-full text-black max-md:mt-6 px-4 max-md:px-2">
-      <h2 className="flex flex-row justify-center items-center w-full text-5xl font-bold tracking-tighter max-md:flex-wrap max-md:text-4xl">
+      <h2 className="flex flex-row text-center justify-center items-center w-full text-5xl font-bold tracking-tighter max-md:flex-wrap max-md:text-4xl">
         <span
           data-layername="join"
           className="my-auto"
@@ -31,18 +31,18 @@ const DownloadSection = () => {
         </span>
       </h2>
 
-      <div className="flex flex-col items-center self-center mt-12 max-md:mt-6">
+      <div className="flex flex-col items-center self-center mt-12 max-md:mt-6 max-md:max-w-full">
         <h3
           data-layername="downloadForIOsAndroid"
           className="text-3xl font-semibold leading-tight max-md:text-2xl text-center"
         >
           Download for iOS/Android
         </h3>
-        <div className="flex gap-8 items-start mt-6 max-md:gap-4 max-md:flex-col">
+        <div className="flex gap-8 items-start mt-6 max-md:gap-4 max-md:flex-row md:w-[100px] lg:w-[400px]">
           <a
             href="#"
             data-layername="storeDownloadButton"
-            className="flex overflow-hidden gap-2.5 px-6 py-3 text-sm uppercase bg-white rounded-lg border border-black border-solid w-[160px] max-md:w-[140px] max-md:px-4 max-md:py-2"
+            className="flex overflow-hidden gap-2.5 px-6 py-3 text-sm uppercase bg-white rounded-lg border border-black border-solid w-[160px] md:w-[100px] lg:w-[180px] max-md:px-4 max-md:py-2"
           >
             <Image
               loading="lazy"
@@ -63,7 +63,7 @@ const DownloadSection = () => {
           <a
             href="#"
             data-layername="storeDownloadButton"
-            className="flex overflow-hidden gap-2.5 px-6 py-3 text-sm font-medium leading-none bg-white rounded-lg border border-black border-solid w-[160px] max-md:w-[140px] max-md:px-4 max-md:py-2"
+            className="flex overflow-hidden gap-2.5 py-3 text-sm font-medium leading-none bg-white rounded-lg border border-black border-solid w-[160px] lg:pl-3 lg:w-[180px] md:w-[200px] max-md:px-2 max-md:py-2"
           >
             <Image
               loading="lazy"
