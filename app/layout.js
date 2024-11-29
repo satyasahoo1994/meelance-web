@@ -18,7 +18,7 @@ export const metadata = {
   description: "meelance-web",
   icons: {
     icons: {
-      icon: './images/logo.png',
+      icon: 'favicon.ico',
     },
   },
 };
