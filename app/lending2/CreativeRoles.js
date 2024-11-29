@@ -7,7 +7,7 @@ const CreativeRoles = () => {
     <section className="flex flex-col mt-12 w-full max-md:mt-6 px-4 max-md:px-2">
       <h2
         data-layername="forAllCreativeAndCrewRoles"
-        className="flex-1 shrink gap-2.5 self-stretch px-2.5 w-full text-6xl font-bold tracking-tighter text-black max-md:text-4xl"
+        className="flex-1 shrink gap-2.5 self-stretch text-center px-2.5 w-full text-6xl font-bold tracking-tighter text-black max-md:text-4xl"
       >
         For all creative and crew roles
       </h2>
