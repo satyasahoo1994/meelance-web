@@ -84,49 +84,51 @@ const Hero = () => {
             >
               make your talent in spotlight for:
             </p>
-            <div className="flex flex-wrap gap-8 justify-center items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
-              <Image
-                loading="lazy"
-                src={disnep}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto aspect-[2.45] w-[49px]"
-              />
-              <Image
-                loading="lazy"
-                src={netflix}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto aspect-[3.8] w-[76px]"
-              />
-              <Image
-                loading="lazy"
-                src={primevideo}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto aspect-[3.03] w-[103px]"
-              />
-              <Image
-                loading="lazy"
-                src={govinda}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto w-7 aspect-[1.04]"
-              />
-              <Image
-                loading="lazy"
-                src={esg}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto aspect-[1.35] w-[46px]"
-              />
-              <Image
-                loading="lazy"
-                src={tvf}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px]"
-              />
-              <Image
-                loading="lazy"
-                src={redfm}
-                alt="Talent category icon"
-                className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px]"
-              />
+            <div className="overflow-hidden lg:min-w-[840px] max-md:max-w-[400px]">
+              <div className="flex gap-8 lg:min-w-[840px] animate-marquee">
+                <Image
+                  loading="lazy"
+                  src={disnep}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto aspect-[2.45] w-[49px]"
+                />
+                <Image
+                  loading="lazy"
+                  src={netflix}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto aspect-[3.8] w-[76px]"
+                />
+                <Image
+                  loading="lazy"
+                  src={primevideo}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto aspect-[3.03] w-[103px]"
+                />
+                <Image
+                  loading="lazy"
+                  src={govinda}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto w-7 aspect-[1.04]"
+                />
+                <Image
+                  loading="lazy"
+                  src={esg}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto aspect-[1.35] w-[46px]"
+                />
+                <Image
+                  loading="lazy"
+                  src={tvf}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px]"
+                />
+                <Image
+                  loading="lazy"
+                  src={redfm}
+                  alt="Talent category icon"
+                  className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px]"
+                />
+              </div>
             </div>
           </div>
         </div>
