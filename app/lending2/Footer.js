@@ -31,10 +31,10 @@ const Footer = () => {
           </a>
         ))}
       </nav>
-      <div className="flex gap-4 justify-center items-center py-1.5 pr-8 pl-8 max-md:pl-0 max-md:flex-col md:max-w-full">
+      <div className="flex gap-4 justify-center items-center  py-1.5 pr-8 pl-8 max-md:pl-0 max-md:flex-col md:max-w-full">
         <div
           data-layername="layer1"
-          className="flex overflow-hidden text-center flex-col self-stretch py-1 my-auto w-[89px] md:max-w-auto"
+          className="flex overflow-hidden text-center flex-col self-stretch py-1 lg:max-w-[800px] my-auto w-[89px] md:max-w-auto"
         >
           <Image
             loading="lazy"

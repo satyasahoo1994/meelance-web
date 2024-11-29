@@ -38,11 +38,11 @@ const DownloadSection = () => {
         >
           Download for iOS/Android
         </h3>
-        <div className="flex gap-8 items-start mt-6 max-md:gap-4 max-md:flex-row md:w-[100px]">
+        <div className="flex gap-8 items-start mt-6 max-md:gap-4 max-md:flex-row md:w-[100px] lg:w-[400px]">
           <a
             href="#"
             data-layername="storeDownloadButton"
-            className="flex overflow-hidden gap-2.5 px-6 py-3 text-sm uppercase bg-white rounded-lg border border-black border-solid w-[160px] md:w-[100px] max-md:px-4 max-md:py-2"
+            className="flex overflow-hidden gap-2.5 px-6 py-3 text-sm uppercase bg-white rounded-lg border border-black border-solid w-[160px] md:w-[100px] lg:w-[180px] max-md:px-4 max-md:py-2"
           >
             <Image
               loading="lazy"
@@ -63,7 +63,7 @@ const DownloadSection = () => {
           <a
             href="#"
             data-layername="storeDownloadButton"
-            className="flex overflow-hidden gap-2.5 py-3 text-sm font-medium leading-none bg-white rounded-lg border border-black border-solid w-[160px] md:w-[200px] max-md:px-2 max-md:py-2"
+            className="flex overflow-hidden gap-2.5 py-3 text-sm font-medium leading-none bg-white rounded-lg border border-black border-solid w-[160px] lg:pl-3 lg:w-[180px] md:w-[200px] max-md:px-2 max-md:py-2"
           >
             <Image
               loading="lazy"

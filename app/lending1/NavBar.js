@@ -9,7 +9,7 @@ const NavBar = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-wrap gap-5 justify-between w-full max-w-[1023px] max-md:max-w-full" style={{ marginTop: "2rem" }}>
+    <div className="flex flex-row md:pt-10 justify-between w-full max-w-[1023px] max-md:max-w-[380px] max-md:mt-7">
       <div className="flex flex-col items-center">
         <Image
           loading="lazy"
