@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import favicon from "./images/netflix.png";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -16,21 +17,20 @@ export const metadata = {
   title: "meelance-web",
   description: "meelance-web",
   icons: {
-    icon: "/favicon.ico",
+    icons: {
+      icon: './images/logo.png',
+    },
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
-    </html>
+    </html >
   );
 }
