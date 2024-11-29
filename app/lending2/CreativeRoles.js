@@ -14,12 +14,12 @@ const CreativeRoles = () => {
       <div className="flex flex-wrap gap-4 justify-center items-center px-2.5 mt-6 w-full max-md:max-w-full">
         {/* Map through items if needed */}
         <div
-          className="flex grow shrink self-stretch my-4 w-32 rounded-xl h-[216px] max-md:w-24 max-md:h-[180px]"
+          className="flex grow shrink self-stretch my-4 w-32 rounded-xl h-[416px] max-md:w-24 max-md:h-auto"
         >
           <Image
             src={frame4}
             alt="Creative role frame"
-            className="object-contain grow shrink aspect-[1.18] min-w-[200px] w-full max-md:max-w-full"
+            className="object-contain grow shrink aspect-[1.18] min-w-[200px] w-full max-md:max-w-[800px] max-md:h-[200px]"
           />
         </div>
         {/* Repeat as needed */}

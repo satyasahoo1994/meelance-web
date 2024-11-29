@@ -1,5 +1,6 @@
+"use client"
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // interface FeatureCardProps {
 //   title: string;
@@ -18,14 +19,31 @@ const FeatureCard = ({
   imageAlt,
   isImageLeft,
 }) => {
+
+  const [isLeft, setIsLeft] = React.useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 768;
+      setIsLeft(isMobile ? true : isImageLeft);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isImageLeft]);
+
   const imageContent = (
-    <div className="flex flex-col px-4 min-w-[240px] w-[464px] max-md:max-w-full">
+    <div className="flex flex-col px-4 min-w-[240px] w-[464px] max-md:max-w-full max-md:max-h-auto">
       <div className="flex overflow-hidden flex-col max-w-full rounded-3xl w-full">
         <Image
           loading="lazy"
           src={imageSrc}
           alt={imageAlt}
-          className="object-contain w-full rounded-3xl aspect-[1.61] max-md:max-w-full"
+          className="object-contain w-full rounded-3xl aspect-[1.61] max-md:max-w-full "
         />
       </div>
     </div>
@@ -34,7 +52,7 @@ const FeatureCard = ({
   const textContent = (
     <div
       data-layername="oldNeat"
-      className="flex flex-col min-w-[240px] w-[444px] max-md:max-w-full"
+      className="flex flex-col min-w-[240px] w-[444px] max-md:max-w-full max-md:max-h-auto"
     >
       <div className="flex flex-col w-full max-w-[444px] max-md:max-w-full">
         <h3
@@ -53,7 +71,7 @@ const FeatureCard = ({
       </div>
       <p
         data-layername="aProfileOnMeelanceOffersNumerousBenefitsForCreativeProfessionalsItAllowsYouToShowcaseYourWorkConnectWithIndustryPeersAndEnhanceYourOnlineVisibility"
-        className="gap-2 px-2.5 py-2 mt-2 max-w-full text-base text-left leading-6 text-black rounded-lg w-[444px] max-md:max-w-full"
+        className="gap-2 px-2.5 py-2 mt-2 max-w-full text-base text-justify leading-6 text-black rounded-lg w-[444px] max-md:max-w-full"
       >
         {description}
       </p>
@@ -78,9 +96,9 @@ const FeatureCard = ({
   return (
     <div
       data-layername="card"
-      className="flex flex-wrap gap-10 justify-between items-start py-5 mt-16 w-full rounded-xl max-md:mt-10 max-md:max-w-full"
+      className="flex flex-wrap gap-10 justify-between items-start py-5 mt-6 w-full rounded-xl max-md:mt-2 max-md:max-w-full"
     >
-      {isImageLeft ? (
+      {isLeft ? (
         <>
           {imageContent}
           {textContent}

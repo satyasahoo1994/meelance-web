@@ -15,11 +15,17 @@ const geistMono = localFont({
 export const metadata = {
   title: "meelance-web",
   description: "meelance-web",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

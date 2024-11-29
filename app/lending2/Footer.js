@@ -31,10 +31,10 @@ const Footer = () => {
           </a>
         ))}
       </nav>
-      <div className="flex gap-4 justify-center items-center py-1.5 pr-8 pl-8 max-md:pl-5 max-md:flex-col">
+      <div className="flex gap-4 justify-center items-center py-1.5 pr-8 pl-8 max-md:pl-0 max-md:flex-col md:max-w-full">
         <div
           data-layername="layer1"
-          className="flex overflow-hidden flex-col justify-center items-center self-stretch py-1 my-auto w-[89px]"
+          className="flex overflow-hidden text-center flex-col self-stretch py-1 my-auto w-[89px] md:max-w-auto"
         >
           <Image
             loading="lazy"
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <p
           data-layername="2024MeelanceIncAllRightsReserved"
-          className="gap-2.5 self-stretch my-auto text-sm font-medium leading-none text-black min-w-[240px] max-md:text-center"
+          className="gap-2.5 self-stretch my-auto text-sm font-medium leading-none text-black min-w-[240px] max-md:text-center md:max-w-auto"
         >
           2024 Meelance, Inc. All rights reserved.
         </p>
