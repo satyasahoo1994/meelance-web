@@ -3,12 +3,14 @@ import React from 'react';
 import meteocons_star from '../images/meteocons_star.png';
 import disnep from '../images/disnep.png';
 import dHero1 from '../images/3dHero1.png';
+
 import netflix from '../images/netflix.png';
 import primevideo from '../images/primevideo.png';
 import govinda from '../images/govinda.png';
 import esg from '../images/esg.png';
 import tvf from '../images/tvf.png';
 import redfm from '../images/redfm.png';
+
 
 const Hero = () => {
   return (

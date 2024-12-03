@@ -13,7 +13,7 @@ import frame3 from '../images/frame3.png';
 
 const LandingPage1 = () => {
   return (
-    <div className="flex flex-col overflow-hidden bg-white pb-3" style={{ width: '100%' }}>
+    <div className="flex flex-col overflow-hidden bg-white pb-3 pt-5" style={{ width: '100%' }}>
       <Header />
       <main className="flex flex-col justify-center w-full max-w-[1200px] px-4 md:px-6 mx-auto mt-6">
         <Hero />

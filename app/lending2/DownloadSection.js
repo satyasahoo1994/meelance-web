@@ -27,7 +27,7 @@ const DownloadSection = () => {
           data-layername="millionsOfCreatorsAndEntertainers"
           className="my-auto"
         >
-          {' '}& Millions of creators and entertainers
+          {' '}  and Millions of creators and entertainers
         </span>
       </h2>
 
