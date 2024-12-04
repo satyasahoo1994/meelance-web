@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import meelance_gradient from '../images/meelance_gradient.png'
+import { useRouter } from 'next/navigation';
 
 const Footer = () => {
+  const router = useRouter();
   const footerLinks = [
     {
       title: 'Feedback',
@@ -55,6 +59,7 @@ const Footer = () => {
         <div
           data-layername="layer1"
           className="flex overflow-hidden text-center item-center justify-center py-1 my-auto"
+          onClick={() => router.push("/")}
         >
           <Image
             loading="lazy"

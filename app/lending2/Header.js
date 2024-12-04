@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import logo from '../images/logo.png';
+import logoWhite from '../images/logo_white.png';
 import mail from '../images/mail.png';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
@@ -89,11 +90,16 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-gray-900 text-white shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'
-          } transition-transform duration-300 ease-in-out`}
+        className={`fixed top-0 right-0 h-full w-64 text-white shadow-lg transform ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          } transition-transform duration-300 ease-in-out`} style={{
+            background: "#4e54c8",
+            background: "-webkit-linear-gradient(to bottom, #4e54c8, #8f94fb)",
+            background: "linear-gradient(to bottom, #4e54c8, #8f94fb)",
+
+          }}
       >
         <div className="flex items-center justify-between p-4">
-          <h2 className="text-lg font-semibold">Menu</h2>
+          <Image loading="lazy" src={logoWhite} alt="Meelance logo" className="object-contain max-w-full aspect-[3.32] w-[60px]" />
           <button
             onClick={() => setIsOpen(false)}
             className="text-gray-300 hover:text-white focus:outline-none"
