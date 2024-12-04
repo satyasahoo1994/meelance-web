@@ -54,7 +54,7 @@ const Hero = () => {
             <button
               data-layername="button"
               onClick={() => router.push('https://bio.link/meelance')}
-              className="flex gap-2.5 justify-center items-center self-stretch px-5 my-auto font-semibold leading-snug text-white bg-black rounded-2xl min-h-[38px] max-md:px-0 w-[103px]"
+              className="flex gap-2.5 justify-center items-center self-stretch px-5 my-auto font-semibold leading-snug text-white bg-black rounded-2xl min-h-[38px] max-md:px-0 max-md:max-w-[103px] w-[125px]"
             >
               <Image
                 loading="lazy"
