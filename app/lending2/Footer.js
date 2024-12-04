@@ -39,7 +39,7 @@ const Footer = () => {
   return (
     <footer
       data-layername="footer"
-      className="flex flex-col lg:flex-row gap-5 justify-between py-6 mt-12 bg-white border-t border-black border-opacity-10 max-md:mt-6 w-full lg:px-[300px]"
+      className="flex flex-col lg:flex-row gap-5 justify-between py-6 mt-12 bg-white border-t border-black border-opacity-10 max-md:mt-6 w-full lg:px-[230px]"
     >
       <div className="flex gap-4 items-start px-2.5 py-1.5 text-base text-black whitespace-nowrap max-md:flex-wrap max-md:justify-center max-md:text-sm max-md:gap-3">
         {footerLinks.map((link, index) => (
