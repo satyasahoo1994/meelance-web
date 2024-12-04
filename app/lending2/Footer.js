@@ -1,32 +1,57 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import meelance_gradient from '../images/meelance_gradient.png'
+import { useRouter } from 'next/navigation';
 
 const Footer = () => {
+  const router = useRouter();
   const footerLinks = [
-    'About',
-    'Feedback',
-    'Help',
-    'Privacy',
-    'Terms',
-    'Guidelines',
+    {
+      title: 'Feedback',
+      id: 1,
+      url: 'https://app.meelance.com/submit-feedback',
+    },
+    {
+      title: 'Help',
+      id: 2,
+      url: 'https://app.meelance.com/help-and-support',
+    },
+    {
+      title: 'Privacy',
+      id: 3,
+      url: 'https://app.meelance.com/privacy-policies',
+    },
+    {
+      title: 'Terms',
+      id: 4,
+      url: 'https://app.meelance.com/terms-and-conditions',
+    },
+    {
+      title: 'Guidelines',
+      id: 5,
+      url: 'https://app.meelance.com/community-guidelines',
+    },
   ];
+
 
   return (
     <footer
       data-layername="footer"
-      className="flex flex-col lg:flex-row gap-5 justify-between py-6 mt-12 bg-white border-t border-black border-opacity-10 max-md:mt-6 w-full lg:px-[300px]"
+      className="flex flex-col lg:flex-row gap-5 justify-between py-6 mt-12 bg-white border-t border-black border-opacity-10 max-md:mt-6 w-full lg:px-[230px]"
     >
       <div className="flex gap-4 items-start px-2.5 py-1.5 text-base text-black whitespace-nowrap max-md:flex-wrap max-md:justify-center max-md:text-sm max-md:gap-3">
         {footerLinks.map((link, index) => (
           <a
-            key={index}
-            href="#"
-            data-layername={link.toLowerCase()}
+            key={link?.id}
+            href={link.url}
+            target="_blank"
+            data-layername={link?.title.toLowerCase()}
             className="gap-2.5"
             style={{ color: "#333" }}
           >
-            {link}
+            {link?.title}
           </a>
         ))}
       </div>
@@ -34,6 +59,7 @@ const Footer = () => {
         <div
           data-layername="layer1"
           className="flex overflow-hidden text-center item-center justify-center py-1 my-auto"
+          onClick={() => router.push("/")}
         >
           <Image
             loading="lazy"

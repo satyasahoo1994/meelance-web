@@ -19,15 +19,29 @@ module.exports = {
       },
       fontFamily: {
         manrope: ['Manrope', 'sans-serif'],
+        alumni: ['"Alumni Sans SC"', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        'akhir-tahun': ['"a Akhir Tahun"', 'sans-serif'],
+        carrois: ['"Carrois Gothic"', 'sans-serif'],
       },
       animation: {
         marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-175%)' },
         },
+        marquee2: {
+          '0%': { transform: 'translateX(175%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
+      backdropBlur: {
+        sm: '4px',
+        md: '12px',
+        lg: '24px',
       },
     },
   },
