@@ -61,7 +61,8 @@ const DownloadSection = () => {
             </div>
           </a>
           <a
-            href="#"
+            href="https://apps.apple.com/in/app/meelance/id6497227499"
+            target="_blank"
             data-layername="storeDownloadButton"
             className="flex overflow-hidden gap-2.5 py-3 text-sm font-medium leading-none bg-white rounded-lg border border-black border-solid w-[160px] lg:pl-3 lg:w-[180px] md:w-[200px] max-md:px-2 max-md:py-2"
           >

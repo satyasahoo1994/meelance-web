@@ -117,17 +117,17 @@ const Header = () => {
         </div>
         <div className="mt-4 space-y-4">
           <a
-            onClick={() => router.push('/')}
+            onClick={() => router.push('https://bio.link/meelance')}
             className="block px-4 py-2 text-sm hover:bg-gray-700"
           >
-            Home
+            Follow
           </a>
-          <a
+          {/* <a
             onClick={() => router.push('/')}
             className="block px-4 py-2 text-sm hover:bg-gray-700"
           >
             Login
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>

@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import meteocons_star from '../images/meteocons_star.png';
@@ -10,9 +12,11 @@ import govinda from '../images/govinda.png';
 import esg from '../images/esg.png';
 import tvf from '../images/tvf.png';
 import redfm from '../images/redfm.png';
+import { useRouter } from 'next/navigation';
 
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <div
     // className="flex flex-col w-full px-6 max-md:px-4 max-md:max-w-full"
@@ -22,7 +26,7 @@ const Hero = () => {
       >
         <div className="flex flex-col">
           <div className="flex flex-col w-full max-w-[495px] max-md:max-w-full">
-            <h1 className="gap-2 w-full uppercase text-left text-black text-4xl font-bold leading-[39px] decoration-none underline-offset-[from-font] font-[BriemHand]">
+            <h1 className="gap-2 w-full uppercase text-left text-black text-4xl font-bold leading-[39px] decoration-none underline-offset-[from-font] font-alumni">
               A professional network for media And Entertainment Industry
             </h1>
             <div className="flex flex-col mt-10 max-w-full text-black w-full text-justify">
@@ -49,7 +53,8 @@ const Hero = () => {
             </p>
             <button
               data-layername="button"
-              className="flex gap-2.5 justify-center items-center self-stretch px-11 my-auto font-semibold leading-snug text-white bg-black rounded-2xl min-h-[51px] max-md:px-5 w-[170px]"
+              onClick={() => router.push('https://bio.link/meelance')}
+              className="flex gap-2.5 justify-center items-center self-stretch px-5 my-auto font-semibold leading-snug text-white bg-black rounded-2xl min-h-[38px] max-md:px-0 w-[103px]"
             >
               <Image
                 loading="lazy"
@@ -84,55 +89,101 @@ const Hero = () => {
               className="gap-2 self-stretch py-2 my-auto text-xs leading-5 text-black"
               style={{ textTransform: 'uppercase' }}
             >
-              make your talent in spotlight for:
+              spotlight you talent for:
             </p>
             <div className="overflow-hidden lg:min-w-[840px] md:w-[150px]">
-              <div className="flex w-[160%] overflow-hidden whitespace-nowrap">
-                <div className="flex gap-8 lg:min-w-[840px] inline-block animate-marquee">
+              <div className="relative flex overflow-x-hidden">
+                <div className="flex flex-row py-2 animate-marquee whitespace-nowrap text-black">
                   <Image
                     loading="lazy"
                     src={disnep}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto aspect-[2.45] w-[49px]"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[2.45] w-[49px] mx-4"
                   />
                   <Image
                     loading="lazy"
                     src={netflix}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto aspect-[3.8] w-[76px]"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[3.8] w-[76px] mx-4"
                   />
                   <Image
                     loading="lazy"
                     src={primevideo}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto aspect-[3.03] w-[103px]"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[3.03] w-[103px] mx-4"
                   />
                   <Image
                     loading="lazy"
                     src={govinda}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto w-7 aspect-[1.04]"
+                    className="object-contain shrink-0 self-stretch my-auto w-7 aspect-[1.04] mx-4"
                   />
                   <Image
                     loading="lazy"
                     src={esg}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto aspect-[1.35] w-[46px]"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[1.35] w-[46px] mx-4"
                   />
                   <Image
                     loading="lazy"
                     src={tvf}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px]"
+                    className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px] mx-4"
                   />
                   <Image
                     loading="lazy"
                     src={redfm}
                     alt="Talent category icon"
-                    className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px]"
+                    className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px] mx-4"
+                  />
+                </div>
+
+                <div className="flex flex-row absolute top-0 py-2 animate-marquee2 whitespace-nowrap text-black">
+                  <Image
+                    loading="lazy"
+                    src={disnep}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[2.45] w-[49px] mx-4"
+                  />
+                  <Image
+                    loading="lazy"
+                    src={netflix}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[3.8] w-[76px] mx-4"
+                  />
+                  <Image
+                    loading="lazy"
+                    src={primevideo}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[3.03] w-[103px] mx-4"
+                  />
+                  <Image
+                    loading="lazy"
+                    src={govinda}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto w-7 aspect-[1.04] mx-4"
+                  />
+                  <Image
+                    loading="lazy"
+                    src={esg}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto aspect-[1.35] w-[46px] mx-4"
+                  />
+                  <Image
+                    loading="lazy"
+                    src={tvf}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px] mx-4"
+                  />
+                  <Image
+                    loading="lazy"
+                    src={redfm}
+                    alt="Talent category icon"
+                    className="object-contain shrink-0 self-stretch my-auto rounded aspect-square w-[34px] mx-4"
                   />
                 </div>
               </div>
+
             </div>
           </div>
         </div>

@@ -13,14 +13,14 @@ const Header = () => {
 
         <div className="flex flex-col justify-center w-full max-md:max-w-full">
           <div className="flex flex-col w-full text-center max-md:max-w-full">
-            <h1 className="text-7xl font-semibold tracking-tighter leading-[82px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" style={{ textTransform: 'uppercase' }}>
+            <h1 className="text-7xl font-semibold tracking-tighter leading-[82px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px] font-akhir-tahun" style={{ textTransform: 'uppercase' }}>
               <span>Not a </span>
               <span className="text-purple-400">SOCIAL MEDIA</span>
               <br />
               <span>Not a </span>
               <span className="text-purple-400 uppercase">Generic Job Board</span>
             </h1>
-            <p className="mt-4 text-3xl leading-10 uppercase max-md:max-w-full">
+            <p className="mt-4 text-3xl leading-10 uppercase max-md:max-w-full font-carrois">
               <span>Imagine a professional networking app better than </span>
               <span className="text-purple-400">LINKED!n</span>
               <span>, but meant for </span>

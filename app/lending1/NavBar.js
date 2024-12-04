@@ -22,7 +22,7 @@ const NavBar = () => {
         <button
           className="gap-2.5 self-stretch px-6 py-3 text-white whitespace-nowrap bg-black rounded-2xl shadow-sm max-md:px-5"
           style={{ background: `rgba(187, 123, 255, 1)` }}
-          onClick={() => router.push('/lending2')}
+          onClick={() => router.push('https://bio.link/meelance')}
         >
           Get Started
         </button>
