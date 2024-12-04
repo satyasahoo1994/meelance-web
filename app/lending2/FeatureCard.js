@@ -96,7 +96,7 @@ const FeatureCard = ({
   return (
     <div
       data-layername="card"
-      className="flex flex-wrap gap-10 justify-between items-start py-5 mt-6 w-full rounded-xl max-md:mt-2 max-md:max-w-full"
+      className="flex flex-wrap gap-10 justify-between items-start py-5 mt-6 w-full rounded-xl max-md:mt-2 max-md:max-w-full lg:px-7 max-md:px-4"
     >
       {isLeft ? (
         <>

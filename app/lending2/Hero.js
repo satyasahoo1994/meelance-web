@@ -81,15 +81,15 @@ const Hero = () => {
           className="object-contain grow shrink aspect-[1.18] min-w-[200px] w-[300px] max-md:max-w-full"
         />
       </div>
-      <div className="flex flex-col justify-center items-end mt-10 w-full max-md:max-w-full">
-        <div className="flex gap-4 justify-center items-center px-6 mt-10 py-3.5 w-full rounded-3xl bg-fuchsia-700 bg-opacity-10 max-w-[1215px] max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col justify-center mt-10 w-full max-md:max-w-full lg:px-6">
+        <div className="flex gap-4 justify-center items-center px-6 mt-10 py-3.5 w-full rounded-3xl bg-fuchsia-700 bg-opacity-10 max-w-[1215px] max-md:px-2 max-md:max-w-full">
           <div className="flex flex-wrap gap-6 justify-center items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
             <p
               data-layername="makeYourTalentInSpotlightFor"
               className="gap-2 self-stretch py-2 my-auto text-xs leading-5 text-black"
               style={{ textTransform: 'uppercase' }}
             >
-              spotlight you talent for:
+              spotlight your talent for:
             </p>
             <div className="overflow-hidden lg:min-w-[840px] md:w-[150px]">
               <div className="relative flex overflow-x-hidden">

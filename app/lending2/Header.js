@@ -12,8 +12,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-light-800 px-6">
-      <div className="max-w-[1080px] mx-auto px-0 sm:px-6 lg:px-8">
+    <nav className="bg-light-800 max-lg:px-6 max-md:px-1">
+      <div className="max-w-[1110px] mx-auto md:px-1">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             {/* <a href="/" className="text-white text-lg font-semibold">

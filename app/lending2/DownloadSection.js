@@ -21,13 +21,13 @@ const DownloadSection = () => {
           src={group}
           alt="Meelance logo"
           className="object-contain my-auto w-[130px]"
-        />
+        /> and
 
         <span
           data-layername="millionsOfCreatorsAndEntertainers"
           className="my-auto"
         >
-          {' '}  and Millions of creators and entertainers
+          {' '}  Millions of creators and entertainers
         </span>
       </h2>
 
